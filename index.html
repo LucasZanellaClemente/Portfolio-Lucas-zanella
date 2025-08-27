@@ -10,6 +10,11 @@
 
 <body>
 
+<div class="particulas">
+
+</div>
+
+
     <nav class="navegacao">
         <ul class="menu">
             <li><a href="#inicio" class="menu-link">inicio</a></li>
@@ -82,19 +87,21 @@
     </section>
     <section class="contatos" id="contatos">
         <h2 class="contatos-titulo">Entre em contato</h2>
-        <form id="formulario-contato" class="formulario">
-            <div class="nome-form">
-                <input placeholder="name" class="campo-form">
-            </div>
+        <form id="formulario-contato" class="formulario-contato">
             <div class="grupo-form">
-                <textarea placeholder="digite sua mensagem ..." class="text-form"></textarea>
+                <input placeholder="Nome" class="campo-form" id="Nome">
             </div>
 
+
+            <div class="grupo-form">
+                <textarea placeholder="digite sua mensagem ..." class="campo-form" id="mensagem" rows="4"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar whatsapp</button>
 
         </form>
     </section>
 
-
+<script src="script.js"></script>
 
 
 </body>
