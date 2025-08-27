@@ -1,11 +1,16 @@
-const nome = document.getElementById("nome");
-const mensagem = document.getElementById("mensagem");
-const telefone = "5511989422080"
-const texto = `Olá, me chamo ${nome}, ${mensagem}`
+function enviarwhats(event) {
 
-const msgFormatada = encodeURIComponent(texto) 
+    event.preventDefault()
+    debugger
+    const nome = document.getElementById("Nome").value;
+    const mensagem = document.getElementById("mensagem").value;
+    const telefone = "5511989422080"
+    const texto = `Olá, me chamo ${nome}, ${mensagem}`
 
-const url = `https://whatsa.me/5511989422080/?t=${msgformatada}`
+    const msgFormatada = encodeURIComponent(texto)
+    debugger
+    const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
 
-window.open(url, '_blank')
+    window.open(url, '_blank')
 
+}
